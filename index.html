@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>A Little Something for You 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decorations" aria-hidden="true">
+    <span>♡</span><span>✿</span><span>♡</span><span>✧</span><span>♡</span>
+    <span>✿</span><span>♡</span><span>✧</span><span>♡</span>
+  </div>
+
+  <main class="page">
+    <section class="intro" id="intro">
+      <div class="flower">🌸</div>
+      <p class="eyebrow">A tiny little thing, made for you</p>
+      <h1>Hey, <span id="herName">beautiful</span> <span class="pink">♡</span></h1>
+      <p class="intro-copy">I made a few questions just for you.<br>Get comfy, be yourself, and let's see where this goes. 💌</p>
+      <button class="primary" id="startBtn">Open your little surprise <span>♡</span></button>
+      <p class="tiny-note">No wrong answers. Just you being you.</p>
+    </section>
+
+    <section class="quiz hidden" id="quiz" aria-live="polite">
+      <header class="quiz-top">
+        <span class="pill">A little question game</span>
+        <span class="progress-label" id="progressLabel">01 / 10</span>
+      </header>
+      <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+      <div class="question-card">
+        <div class="question-icon" id="questionIcon">🌷</div>
+        <p class="category" id="category">THE CUTE STUFF</p>
+        <h2 id="questionText">What's your idea of a perfect date?</h2>
+        <p class="hint" id="questionHint">Choose the answer that feels most like you.</p>
+        <div class="answers" id="answers"></div>
+        <label class="other-label hidden" id="otherWrap">Your answer
+          <textarea id="otherAnswer" rows="3" placeholder="Tell me in your own words..."></textarea>
+        </label>
+        <div class="actions">
+          <button class="back-btn" id="backBtn">← Back</button>
+          <button class="primary next-btn" id="nextBtn">Next question →</button>
+        </div>
+      </div>
+      <p class="tiny-note">Made with a little extra love <span class="pink">♡</span></p>
+    </section>
+
+    <section class="ending hidden" id="ending">
+      <div class="flower big">💌</div>
+      <p class="eyebrow">You made it to the end</p>
+      <h1>That's all, <span class="pink">sweetheart ♡</span></h1>
+      <p class="intro-copy">Thanks for sharing a little piece of your world with me.<br>One last thing before you go…</p>
+      <div class="date-note">
+        <p>Would you let me take you on a date sometime? 🌷</p>
+        <p class="small">No pressure at all — I'd just love to spend some time with you.</p>
+      </div>
+      <label class="name-label">What should I call you? <span>(optional)</span>
+        <input id="herNickname" type="text" maxlength="60" placeholder="Your name or nickname">
+      </label>
+      <button class="primary submit-btn" id="submitBtn">Send my answers 💗</button>
+      <p class="submit-status" id="submitStatus" role="status"></p>
+      <p class="tiny-note">Your answers will only be sent when you tap the button above.</p>
+    </section>
+
+    <section class="thanks hidden" id="thanks">
+      <div class="flower big">💖</div>
+      <h1>Answers sent!</h1>
+      <p class="intro-copy">Thank you for answering my little questions.<br>I hope this made you smile. 🌸</p>
+      <p class="tiny-note">Now let's see what the future has in store… ♡</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
